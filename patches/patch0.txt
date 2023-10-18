@@ -12526,7 +12526,7 @@ diff --strip-trailing-cr -NBbaur squashfs-tools/LZMA/lzma465/history.txt squashf
 +
 +4.57           2007-12-12
 +-------------------------
-+- Speed optimizations in Ñ++ LZMA Decoder. 
++- Speed optimizations in Ã‘++ LZMA Decoder. 
 +- Small changes for more compatibility with some C/C++ compilers.
 +
 +
@@ -38487,8 +38487,8 @@ diff --strip-trailing-cr -NBbaur squashfs-tools/unsquashfs.c squashfs-tools-patc
 +    }
 +
 +    // CJH: Notify if endianess is different
-+    if(swap)
-+        ERROR("Reading a different endian SQUASHFS filesystem on %s\n", source);
++    if(swap){
++        ERROR("Reading a different endian SQUASHFS filesystem on %s\n", source);}
  
  	/*
  	 * Try to read a Squashfs 4 superblock
